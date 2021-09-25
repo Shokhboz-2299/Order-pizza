@@ -6,30 +6,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>imtixon</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 
 <body>
   <div class="container">
-    <div class="js-input-wrapper">
-      <!-- <input class="first-checkbox" type="checkbox">
-      <input class="second-checkbox" type="checkbox"> -->
+    
+    <h1 class="text-center m-5 fst-normal">Pitsa buyurtma qilish</h1>
+    
+    <div class="row">
+      <!-- first column  -->
+      <div class="col-md-8">
+        
+        <form class="pizza-form" id="form-id" action="https://echo.htmlacademy.ru" method="POST">
+          
+          <h4 class="fw-bold">Non qanday bo'lsin?</h4>
+          <select class="bread-select px-5" name="bread-select-name" id="bread-select-id">
+            <option  value=" yupqa">Yupqa</option>
+            <option  value=" qalin">Qalin</option>
+            <option  value=" farqiyoq">Farqi yoq</option>
+          </select>
+          <fieldset class="my-4">
+            <legend class="fw-bold">Kattaligi</legend>
+            <div class="d-flex inputRadioWrapper">
+              <ul class="js-fruits-list"></ul>
+            </div>
+            
+          </fieldset>
+          <fieldset>
+            <legend class="fw-bold">Ustiga nima solaylik?</legend>
+            <div class="d-flex flex-wrap inputCheckboxWrapper">
+              <ul class="js-fruits-list"></ul>
+            </div>
+            
+          </fieldset>
+          <fieldset class="my-3">
+            <legend class="fw-bold">Qo'shimchalar</legend>
+            <div class="d-flex inputCheckboxWrapper2">
+
+            </div>
+            
+          </fieldset>
+          
+            
+           
+              
+            </ul>
+          </form>
+          
+        </div>
+        
+        <!-- second column  -->
+        <div class="col-md-4 border-start border-dark px-4">
+          <p class="bread fw-bold fs-4">Non:<span class="breadResult fw-normal"></span></p>
+
+          <p class="pizza-size fw-bold fs-4">Kattaligi:<span class="inputRadioWrapperResult fw-normal"></span></p>
+
+          <p class="onPizza fw-bold fs-4">Ustida:</p>
+          <ul class="selectedOnPizzaList"></ul>
+
+          <p class="additionalPizza fw-bold fs-4">Qo'shimcha:</p>
+          <ul class="selectedAdditionalPizzaList"></ul>
+          
+          <button class="order-buttun px-4 py-2 bg-danger text-white border-0 fs-5" type="submit" form="form-id">Buyurtma berish</button>
+        </div>
+      </div>
+      
     </div>
-    <ul class="js-fruits-list">
-      <li>Lorem, ipsum dolor.</li>
-      <li>Voluptates, consequatur. Quod?</li>
-      <li>Adipisci, tenetur! Eligendi.</li>
-    </ul>
-
-
-    <form class="test-form" id="form-id" action="https://echo.htmlacademy.ru" method="POST">
-      <input class="test-input" type="text" name="test-input" required>
-    </form>
-
-    <button class="test-buttun" type="submit" form="form-id">Yubor</button>
-  </div>
-
-
-  <script src="js/index.js"></script>
-</body>
-</html>
+    
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+  </html>
