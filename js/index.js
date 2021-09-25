@@ -91,18 +91,15 @@ for (var i = 0; i < onPizzaArray.length; i++) {
     else {
       onPizzaResultArr.push(currentValue); 
     }
-    swap();
+    elSelectedOnPizzaList.innerHTML = '';
+    for (var i = 0; i < onPizzaResultArr.length; i++) {
+      var lastItem = document.createElement('li'); 
+      lastItem.textContent =" - " + onPizzaResultArr[i]; 
+      elSelectedOnPizzaList.append(lastItem); 
+    }
   });
 }
 
-var swap = function () {
-  elSelectedOnPizzaList.innerHTML = '';
-  for (var i = 0; i < onPizzaResultArr.length; i++) {
-    var lastItem = document.createElement('li'); 
-    lastItem.textContent =" - " + onPizzaResultArr[i]; 
-    elSelectedOnPizzaList.append(lastItem); 
-  }
-}
 
 
 /* ============================================ */
@@ -145,17 +142,14 @@ for (var i = 0; i < additionalArray.length; i++) {
     else {
       additionalResultArr.push(currentValue2); 
     }
-    
-    swap2();
+
+    elSelectedAdditionalPizzaList.innerHTML = '';
+    for (var i = 0; i < additionalResultArr.length; i++) {
+      var lastItem2 = document.createElement('li'); 
+      lastItem2.textContent =" - " + additionalResultArr[i]; 
+      elSelectedAdditionalPizzaList.append(lastItem2); 
+    }
   });
 }
 
-var swap2 = function () {
-  elSelectedAdditionalPizzaList.innerHTML = '';
-  for (var i = 0; i < additionalResultArr.length; i++) {
-    var lastItem2 = document.createElement('li'); 
-    lastItem2.textContent =" - " + additionalResultArr[i]; 
-    elSelectedAdditionalPizzaList.append(lastItem2); 
-  }
-}
  
