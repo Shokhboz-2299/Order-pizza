@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>imtixon</title>
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -22,28 +23,31 @@
           
           <h4 class="fw-bold">Non qanday bo'lsin?</h4>
           <select class="bread-select px-5" name="bread-select-name" id="bread-select-id">
+            <option hidden value=" yupqa">Yupqa</option>
             <option  value=" yupqa">Yupqa</option>
             <option  value=" qalin">Qalin</option>
+            <option  value=" yumshoq">Yumshoq</option>
+            <option  value=" qattiq">Qattiq</option>
             <option  value=" farqiyoq">Farqi yoq</option>
           </select>
           <fieldset class="my-4">
             <legend class="fw-bold">Kattaligi</legend>
             <div class="d-flex inputRadioWrapper">
-              <ul class="js-fruits-list"></ul>
+              
             </div>
             
           </fieldset>
           <fieldset>
             <legend class="fw-bold">Ustiga nima solaylik?</legend>
             <div class="d-flex flex-wrap inputCheckboxWrapper">
-              <ul class="js-fruits-list"></ul>
+              
             </div>
             
           </fieldset>
           <fieldset class="my-3">
             <legend class="fw-bold">Qo'shimchalar</legend>
             <div class="d-flex inputCheckboxWrapper2">
-
+              
             </div>
             
           </fieldset>
@@ -58,20 +62,19 @@
         
         <!-- second column  -->
         <div class="col-md-4 border-start border-dark px-4">
-          <p class="bread fw-bold fs-4">Non:<span class="breadResult fw-normal"></span></p>
+          <p class="bread fw-bold fs-4">Non: <span class="breadResult fw-normal"></span></p>
 
-          <p class="pizza-size fw-bold fs-4">Kattaligi:<span class="inputRadioWrapperResult fw-normal"></span></p>
+          <p class="pizza-size fw-bold fs-4">Kattaligi: <span class="inputRadioWrapperResult fw-normal"></span></p>
 
-          <p class="onPizza fw-bold fs-4">Ustida:</p>
-          <ul class="selectedOnPizzaList"></ul>
+          <p class="onPizza fw-bold fs-4">Ustida: </p>
+          <ul class="selectedOnPizzaList list-unstyled"></ul>
 
-          <p class="additionalPizza fw-bold fs-4">Qo'shimcha:</p>
-          <ul class="selectedAdditionalPizzaList"></ul>
+          <p class="additionalPizza fw-bold fs-4">Qo'shimcha: </p>
+          <ul class="selectedAdditionalPizzaList list-unstyled"></ul>
           
-          <button class="order-buttun px-4 py-2 bg-danger text-white border-0 fs-5" type="submit" form="form-id">Buyurtma berish</button>
+          <button class="order-buttun px-4 py-2 bg-danger text-white border-0 fs-5  " type="submit" form="form-id">Buyurtma berish</button>
         </div>
       </div>
-      
     </div>
     
     <script src="./bootstrap/js/bootstrap.bundle.js"></script>
